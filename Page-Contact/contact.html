@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--boxicons link --->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Portflolio Fednail Leclercq</title>
+ 
+</head>
+    <body>
+        <main>
+            <!-- herder section -->       
+            <header>
+                <a href="/index.html" class="logo"><span>Fed</span>nail</a>
+
+                <ul class="navbar">
+                    <li><a href="/index.html" class="active">Home</a></li>
+                    <li><a href="/page-Presentation/presentation.html">Présentation</a></li>
+                    <li><a href="/page-Projets/projets.html">Projets</a></li>
+                    <li><a href="/page-Stages/stage.html">Stages</a></li>
+                    <li><a href="/page-Certification/Certification.html">Certifications</a></li>
+                    <li><a href="/Page-Contact/contact.html">Contact</a></li>
+                </ul>
+
+                <div class="menu-btn">
+                    <span>INTRO</span>
+                    <div class="bx bx-menu" id="menu-icon"></div>
+                </div>
+            </header><br>
+            <!-- form section -->
+            <section>
+                <div class="container">
+                    <h1>Contacter moi</h1>
+                    
+                    <div class="form-container">
+                        <div class="forms-wrapper">
+                            <form action="/contact" method="POST">
+                            
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="name"placeholder="Nom"><br>
+
+                                <label for="prenom">Prénom :</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Prenom"><br>
+
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="email"><br>
+
+                                <label for="sujet">Sujet :</label>
+                                <input type="text" id="sujet" name="sujet" placeholder="Sujet">
+
+                                <label for=" message">Message :</label>
+                                <textarea  id="message" name="message" placeholder="Message"></textarea><br><br>
+
+                                <button type="submit">Envoyer</button>
+                            </form>
+
+                            <div id="confirmation" style="display: none;">
+                                <h2>Merci pour votre message !</h2>
+                                <p>Nous avons bien reçu votre message et nous vous contacterons dès que possible.</p>
+                                <!-- Ajoutez ici d'autres informations de confirmation si nécessaire -->
+                            </div>  
+
+                            <form>
+                                <div class="qr-code-container">
+                                    <h2>Mon Code QR</h2><br><br>
+                                    <img src="/images/qr-code-contact.png" alt="Code QR"><br>
+                                    <div class="socials">               
+                                        <a href="https://twitter.com/Fednail07"><i class='bx bxl-twitter'></i></a>
+                                        <a href="https://www.instagram.com/sukig.dev/"><i class='bx bxl-instagram' ></i></a>
+                                        <a href="https://www.linkedin.com/in/fednail-leclercq"><i class='bx bxl-linkedin' ></i></a>
+                                        <a href="https://github.com/lfednail"><i class='bx bxl-github' ></i></a><br><br>
+                                        <a href="https://dumpl.ink/fednailpro">+ de mes contacts</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>   
+            </section>
+        </main>
+        <footer>          
+            <div class="footer">
+                <div class="footer-child">
+                </div>
+                <img class="logo-icon" alt="" src="/images/moi.png">
+                <div class="text-footer">
+                    <h4> &copy; 2023  --  Portfolio Fednail Leclercq. </h4>
+                    <div class="socials">               
+                        <a href="https://twitter.com/Fednail07"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/sukig.dev/"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.linkedin.com/in/fednail-leclercq"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/lfednail"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </footer>
+         <script>
+        // JavaScript pour masquer le formulaire et afficher la confirmation après l'envoi
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Code pour envoyer le formulaire (AJAX, fetch, etc.) ici
+
+            // Afficher la confirmation
+            document.getElementById('confirmation').style.display = 'block';
+            // Masquer le formulaire
+            this.style.display = 'none';
+        });
+        </script>
+    </body>
+</html>

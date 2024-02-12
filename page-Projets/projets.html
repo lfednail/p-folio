@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projets.css">
+
+    <!--boxicons link --->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio Fednail Leclercq</title>
+</head>
+    <body>
+        
+                <!-- herder section -->       
+        <header>
+            <a href="/index.html" class="logo"><span>Fed</span>nail</a>        
+                <ul class="navbar">
+                  <li><a href="/index.html" class="active">Home</a></li>
+                  <li><a href="/page-Presentation/presentation.html">Présentation</a></li>
+                  <li><a href="/page-Projets/projets.html">Projets</a></li>
+                  <li><a href="/page-Stages/stage.html">Stages</a></li>
+                  <li><a href="/page-Certification/Certification.html">Certifications</a></li>
+                  <li><a href="/Page-Contact/contact.html">Contact</a></li>
+                </ul>        
+                <div class="menu-btn">
+                    <span>INTRO</span>
+                    <div class="bx bx-menu" id="menu-icon">
+                        <nav class="menu" id="menu">
+                            <!-- Liste des éléments du menu -->
+                            
+                        </nav>
+                    </div>
+                </div>
+        </header>
+        <main>
+            <section class="projets">
+                <h1>Mes Projets</h1>
+              
+                <h2>Voici les projets que j'ai réalise tout au 
+                    long de ma formation et de mes stages professionnels. 
+                </h2>
+            </section>           
+            
+            <section class="projets grid-container">
+              <div class="card">
+                <img src="/doc-install/image/sharepoint.png"> 
+                <div class="card__content">
+                  <p class="card__title">Partage SharePoint</p>
+                  <p class="card__description">Creation d'une macro-Word qui permet de partager un document sur SharePoint.</p>                
+                  <button class="card__button secondary"><a href="/doc-install/image/partageSharePoint.vb" target="_blank">Source Code</a></button>
+                </div>
+              </div><br>
+
+              <div class="card">
+                <img id="demoImage" src="/doc-install/image/ressourcerie.png"> 
+                <video id="demoVideo" width="100%" height="auto" controls style="display: none;">
+                    <source src="/doc-install/image/La-Ressourcerie.mp4" type="video/mp4">
+                </video> 
+                <div class="card__content">
+                    <p class="card__title">La ressourcerie</p>                    
+                    <p class="card__description">Mise en place de l'authentification SAML sur le CMS WordPress.</p>
+                    <button class="card__button" onclick="toggleVideo()">Live Demo</button>
+                </div>
+              </div>                            
+            </section>
+
+            <h2>🧑🏿‍💻 Ma veille technologique 🧑🏿‍💻</h2>
+            
+            <section class="Veille_techno">
+                <div class="veille-container">
+                    <h1>Veille Technologique 📔</h1><br>
+                    <p>Qu'est-ce que la veille technologique ?
+                        La veille technologique, élément de la veille stratégique, consiste à surveiller 
+                        les évolutions techniques, les innovations dans un secteur d’activité donnée. 
+                        La veille technologique comprend notamment la surveillance, la collecte, le partage 
+                        et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements 
+                        en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, 
+                        processus, concepts, innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur 
+                        l’environnement et l’organisation.
+                    </p> <br>
+                    <h2>Sujet de ma Veille</h2><br>
+                    <h2>Théme 1 : Qu'est ce que Ordinateur quantique ?</h2><br><br>
+                    <!-- Auto width -->
+                    <a href="/doc-install/image/Thème1 et Thème 2 veille techno.pdf" class="btn"><i class="fa fa-download"></i> Télécharger ma Veille Technologique </a><br>
+
+                </div>
+            </section>
+
+            <section class="article-list">
+                <h2>Théme 2 : Qu'est ce que internet quantique ?</h2>
+
+                <div id="InternetQuantique" class="intro">
+                    <h2 class="text-center">Internet Quantique</h2>
+                    <p class="text-center">L'internet quantique est un réseau qui permettra aux appareils quantiques d'échanger des informations dans un environnement qui exploite les lois de la mécanique quantique. Par exemple, l'Internet Quantique permettrait d'atteindre des capacités de traitement sans précédent. Nous pourrions donc réaliser des applications web beaucoup plus robuste qu'actuel. </p>
+                </div>
+                
+                <div class="container">  
+                    
+                    <div class="articles-veille">
+                    <div class="articles"><a href="https://docs.google.com/document/d/1qV8OnFEEg4s7xCw8K6SALmCtAuwonMYQLdtFJ_E0PGE/edit?usp=sharing" target="_blank"><img class="img-veille" src="https://d1fmx1rbmqrxrr.cloudfront.net/zdnet/optim/i/edit/ne/2020/01/teleportation_quantique-620__w630.jpg"></a>
+                        <h3 class="name">Qu'est-ce que l'internet quantique&nbsp;?</h3>
+                        <h3 class="date-veille">03/09/20</h3>
+                        <p class="description">Pour comprendre le fonctionnement de l'écosystème de l'Internet quantique, il faut donc oublier tout ce que vous savez sur l'informatique classique. En effet, l'internet quantique ne vous rappellera guère votre navigateur web préféré. Bref, peu de choses auxquelles la plupart des utilisateurs sont habitués. Il ne faut donc pas s'attendre, au moins pour les prochaines décennies, à pouvoir un jour se lancer dans des réunions Zoom quantiques.</p><a class="action" href="https://docs.google.com/document/d/1qV8OnFEEg4s7xCw8K6SALmCtAuwonMYQLdtFJ_E0PGE/edit?usp=sharing" target="_blank"><i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                    </div>
+                    <div class="articles-veille">
+                        <div class="articles"><a href="https://docs.google.com/document/d/1nc4web5fhPFnJnPdgnkAYPzjSmkcT5XMkN9kUs4akj4/edit?usp=sharing" target="_blank"><img class="img-veille" src="https://i.ytimg.com/vi/_N-2Sx-FDQA/maxresdefault.jpg"></a>
+                            <h3 class="name">La NASA réussit la 1ère téléportation quantique : vers une révolution d’internet ?</h3>
+                            <h3 class="date-veille">22/12/20</h3>
+                            <p class="description"><strong><em>Une équipe composée de chercheurs de la NASA et d’autres organismes est parvenue à réaliser la première téléportation quantique. </em></strong><br><strong><em>Il pourrait s’agir d’une première étape vers une véritable révolution </em></strong><br><strong><em>d’internet…</em></strong></p><a class="action" href="https://docs.google.com/document/d/1nc4web5fhPFnJnPdgnkAYPzjSmkcT5XMkN9kUs4akj4/edit?usp=sharing" target="_blank"><i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="articles-veille">
+                        <div class="articles"><a href="https://docs.google.com/document/d/1iB9-qICI9A9yOSOPLDjAosK8VD1NugLFDw-wYCjMklw/edit?usp=sharing" target="_blank"><img class="img-veille" src="https://www.neozone.org/blog/wp-content/uploads/2021/01/teleportation-quantique-780x470.jpg"></a>
+                            <h3 class="name">NASA : La première téléportation quantique distante ouvre t-elle la voie a l'internet quantique ?</h3>
+                            <h3 class="date-veille">02/01/21</h3>
+                            <p class="description">Pour la première fois, une équipe de scientifiques, comprenant des experts de la NASA, réussit une téléportation quantique à longue distance. Une technologie qui pourrait nous introduire dans une nouvelle ère de communication en transformant le concept de l’Internet quantique en réalité.<br></p><a class="action" href="https://docs.google.com/document/d/1iB9-qICI9A9yOSOPLDjAosK8VD1NugLFDw-wYCjMklw/edit?usp=sharing" target="_blank"><i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>  
+                    <div class="articles-veille">  
+                        <div class="articles"><a href="https://docs.google.com/document/d/1xYCpbf3IPnbCFB6o1eQk--O6dwD1_J0CIHKGvE6QjVc/edit?usp=sharing" target="_blank"><img class="img-veille" src="https://www.neozone.org/blog/wp-content/uploads/2021/02/message-quantique-stallite-780x470.jpg"></a>
+                            <h3 class="name"><strong>Des chercheurs chinois vont envoyer dans l’espace un message quantique « inviolable »</strong><br> <br></h3>
+                            <h3 class="date-veille">05/02/21</h3>
+                            <p class="description">Un nouveau progrès est sur le point d’être réalisé dans le domaine de la technologie quantique. Des chercheurs chinois s’apprêtent à envoyer vers un satellite un message quantique qu’ils qualifient d’inviolable.&nbsp;<br></p><a class="action" href="https://docs.google.com/document/d/1xYCpbf3IPnbCFB6o1eQk--O6dwD1_J0CIHKGvE6QjVc/edit?usp=sharing" target="_blank"><i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="articles-veille">
+                        <div class="articles"><a href="https://docs.google.com/document/d/1jGIOAo-i5SnoPbaJNdRWYcDf2HehjmB-YZVbZQQc0lQ/edit?usp=sharing" target="_blank"><img class="img-veille" src="https://media.lesechos.com/api/v1/images/view/60ab59c98fe56f230b19cb36/1280x720-webp/0611030606870-web-tete.webp"></a>
+                            <h3 class="name"><strong>Serge Haroche : « La France a pris du retard ! L'effort sur la science a trop ralenti »</strong><br></h3>
+                            <h3 class="date-veille">24/05/21</h3>
+                            <p class="description">La France a pris du retard, l'effort sur la science a été considérablement ralenti au cours des trente dernières années, surtout si on la compare à certains autres pays.<br></p><a class="action" href="https://docs.google.com/document/d/1jGIOAo-i5SnoPbaJNdRWYcDf2HehjmB-YZVbZQQc0lQ/edit?usp=sharing" target="_blank"><i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="articles-veille">
+                         <div class="articles"><a href="https://docs.google.com/document/d/1rBRc9XBNZ573WHY6kYBYCbgBbC6NwsUDezhiNZsSi9o/edit#heading=h.ykwswc46dii5" target="_blank"><img class="img-veille" src="https://www.coe.int/documents/24200/9494419/Palais_41087_05.jpg/de9164fc-2c2e-4247-837c-f91e2872f8b8"></a>
+                            <h3 class="name"><strong>Un consortium d'acteurs européens du numérique conçoit le futur Internet quantique de l'UE</strong><br></h3>
+                            <h3 class="date-veille">31/05/21</h3>
+                            <p class="description">Des communications ultra-sécurisées pour les infrastructures critiques et les institutions gouvernementales vont être mises en place au sein de l'UE<br></p><a class="action" href="https://docs.google.com/document/d/1rBRc9XBNZ573WHY6kYBYCbgBbC6NwsUDezhiNZsSi9o/edit#heading=h.ykwswc46dii5" target="_blank"><i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>                                      
+                </div>
+            </section>
+
+        </main>
+
+        <footer>          
+            <div class="footer">
+                <div class="footer-child">
+                </div>
+                <img class="logo-icon" alt="" src="/images/moi.png">
+                <div class="text-footer">
+                    <h4> &copy; 2023  --  Portfolio Fednail Leclercq. </h4>
+                    <div class="socials">               
+                        <a href="https://twitter.com/Fednail07"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/sukig.dev/"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.linkedin.com/in/fednail-leclercq"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/lfednail"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </footer>
+
+        <script src="projets.js"></script>
+    </body>
+</html>
